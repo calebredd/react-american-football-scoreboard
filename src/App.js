@@ -9,6 +9,8 @@ function App() {
   const [homeScore, setHomeScore] = useState(0);
   const [awayScore, setAwayScore] = useState(0);
   const [quarter, setQuarter] = useState(0);
+  const [down, setDown] = useState(1);
+  const [toGo, setToGo] = useState(10);
 
 
   return (
@@ -20,6 +22,10 @@ function App() {
         setAwayScore={setAwayScore}
         setQuarter={setQuarter}
         quarter={quarter}
+        setDown={setDown}
+        down={down}
+        setToGo={setToGo}
+        toGo={toGo}
       />
     </div>
   );
